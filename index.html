@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help I got Isekai into DND</title>
- 
-</head>
-<body>
-    <div class="">
-        <div id="text"></div>
-        <div id="choice" class="route"></div>
-        <button class="btn">option 1</button>
-        <button class="btn">option 1</button>
-        <button class="btn">option 1</button>
-        <button class="btn">option 1</button>
-
-
-    </div>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <script defer src="d4.js"></script>
+    <script defer src="d6.js"></script>
+    <script defer src="d20.js"></script>
+    <title>DnD</title>
     <label id="d20label"></label><br>
     <button type="button" id="initiative" id="attck">Roll Dice</button>
     <script src="d20.js"></script>
+    <progress id="health" value="100" max="100"></progress>
+    
+</head>
+<body onload= "loadD4()">
+    <div class="container">
+        <div id="text">text</div>
+        <div id="choices" class="route-grid">
+        <button class="btn">option 1</button>
+        <button class="btn">option 2</button>
+        <button class="btn">option 3</button>
+        <button class="btn">option 4</button>
+    </div>
+    </div>
 </body>
 </html>
